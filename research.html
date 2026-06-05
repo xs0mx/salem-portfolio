@@ -5,12 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Research work by Salem Nasereddin, including the Clarkson SDIP REU VR Rehabilitation Coach project." />
   <title>Research | Salem Nasereddin</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css?v=4" />
 </head>
 <body>
   <header class="site-header">
     <nav class="nav container">
-      <a class="brand" href="index.html"><span class="brand-mark">SN</span><span>Salem Nasereddin</span></a>
+      <a class="brand" href="index.html">
+        <span class="brand-mark">SN</span>
+        <span>Salem Nasereddin</span>
+      </a>
 
       <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -32,95 +35,32 @@
       <div class="container reveal">
         <span class="eyebrow">Research</span>
         <h1>VR Rehabilitation Coach</h1>
-        <p>Unity and Meta Quest research project for upper-limb bicep curl rehabilitation, real-time feedback, and CSV movement logging.</p>
+        <p>Clarkson SDIP REU research project focused on a Unity and Meta Quest rehabilitation system.</p>
       </div>
     </section>
 
     <section class="section">
-      <div class="container grid-2">
-        <article class="card featured reveal">
-          <h2>Project Objective</h2>
-          <p>Develop a Unity-based VR rehab app where a user grabs a virtual dumbbell, performs bicep curls, and receives live feedback on movement quality.</p>
-
-          <div class="tag-row">
-            <span class="tag">Unity</span>
-            <span class="tag">Meta Quest</span>
-            <span class="tag">Bicep Curl</span>
-            <span class="tag">CSV Logging</span>
-          </div>
-        </article>
-
-        <article class="card reveal">
-          <h2>Core Features</h2>
-          <ul class="check-list">
-            <li>Clean VR rehab room scene.</li>
-            <li>Grabbable virtual dumbbell.</li>
-            <li>Quest headset/controller tracking.</li>
-            <li>Rep counter and movement-quality score.</li>
-            <li>Green/yellow/red feedback cues.</li>
-            <li>CSV export for research data.</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section class="section alt">
       <div class="container">
         <div class="section-header reveal">
           <div>
-            <span class="eyebrow">Project Chart</span>
-            <h2>Research overview</h2>
+            <span class="eyebrow">Project Overview</span>
+            <h2>Full research chart</h2>
           </div>
 
           <a class="btn secondary" href="assets/VR_Rehabilitation_Coach_Chart.pdf" target="_blank" rel="noreferrer">Open PDF</a>
         </div>
 
         <article class="card reveal pdf-card">
-          <iframe class="pdf-viewer" src="assets/VR_Rehabilitation_Coach_Chart.pdf" title="VR Rehabilitation Coach project chart"></iframe>
+          <object
+            class="pdf-viewer"
+            data="assets/VR_Rehabilitation_Coach_Chart.pdf"
+            type="application/pdf">
+            <div class="pdf-fallback">
+              <p>The project overview PDF could not load in this browser.</p>
+              <a class="btn primary" href="assets/VR_Rehabilitation_Coach_Chart.pdf" target="_blank" rel="noreferrer">Open Project Overview</a>
+            </div>
+          </object>
         </article>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="section-header reveal">
-          <div>
-            <span class="eyebrow">Technical Plan</span>
-            <h2>System structure</h2>
-          </div>
-        </div>
-
-        <div class="grid-3">
-          <article class="card reveal">
-            <h3>VR Interaction</h3>
-            <p>Build a simple rehab room and make the dumbbell grabbable.</p>
-          </article>
-
-          <article class="card reveal">
-            <h3>Tracking</h3>
-            <p>Use Quest headset and controller data to estimate curl motion.</p>
-          </article>
-
-          <article class="card reveal">
-            <h3>Feedback</h3>
-            <p>Show rep count, score, and short form cues during the exercise.</p>
-          </article>
-
-          <article class="card reveal">
-            <h3>Scoring</h3>
-            <p>Estimate range of motion, pace, and smoothness.</p>
-          </article>
-
-          <article class="card reveal">
-            <h3>Export</h3>
-            <p>Save session and movement data to CSV for lab review.</p>
-          </article>
-
-          <article class="card reveal">
-            <h3>Next Step</h3>
-            <p>Keep the structure ready for future IMU integration.</p>
-          </article>
-        </div>
       </div>
     </section>
   </main>
